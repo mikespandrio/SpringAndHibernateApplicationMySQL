@@ -1,0 +1,9 @@
+# Notes on how docker image is built
+# From the directory where this README is located
+# Build docker image
+# Run docker image
+
+:> cd input
+:> docker build -t mysqldb .
+:> docker run -d -p 3306:3306 --name mysqldb -e MYSQL_ROOT_PASSWORD=admin mysqldb
+ 
